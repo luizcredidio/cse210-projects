@@ -6,7 +6,7 @@ class Program
     static void Main(string[] args)
     {
         Journal journal = new Journal();
-        PromptGenerator prompts = new PromptGenerator();
+        PromptGenerator promptGenerator = new PromptGenerator();
         string option = "";
         while (option != "5")
         {
@@ -20,13 +20,13 @@ class Program
             string choice = Console.ReadLine();
             if (choice == "1")
             {
-                string _newPrompt = prompts.GetRandomPrompt();
-                Console.WriteLine(_newPrompt);
+                string newPrompt = promptGenerator.GetRandomPrompt();
+                Console.WriteLine(newPrompt);
                 Console.WriteLine(">   ");
-                string _newEntryText = Console.ReadLine();
+                string newEntryText = Console.ReadLine();
                 //Object initializers
                 //https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/how-to-initialize-objects-by-using-an-object-initializer
-                journal.AddEntry(DateTime.Now.ToShortDateString(), _newPrompt, _newEntryText);
+                journal.AddEntry(DateTime.Now.ToShortDateString(), newPrompt, newEntryText);
             }
             else if (choice == "2")
             {
@@ -36,15 +36,15 @@ class Program
             {
                 Console.WriteLine("What is the filename?");
                 Console.WriteLine(">   ");
-                string _fileName = Console.ReadLine();
-                journal.LoadFromFIle(_fileName);
+                string fileName = Console.ReadLine();
+                journal.LoadFromFIle(fileName);
             }
             else if (choice == "4")
             {
                 Console.WriteLine("What is the filename?");
                 Console.WriteLine(">   ");
-                string _fileName = Console.ReadLine();
-                journal.SaveToFile(_fileName);
+                string fileName = Console.ReadLine();
+                journal.SaveToFile(fileName);
             }
             else if (choice == "5")
             {

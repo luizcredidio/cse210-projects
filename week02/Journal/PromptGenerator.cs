@@ -21,7 +21,7 @@ class PromptGenerator
 
     public string GetRandomPrompt()
     {
-        int _randomIndex = new Random().Next(0, 10);
-        return _prompts[_randomIndex];
+        int randomIndex = new Random().Next(0, 10);
+        return _prompts[randomIndex];
     }
 }
