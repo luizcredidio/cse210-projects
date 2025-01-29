@@ -29,8 +29,7 @@ class Journal
         //https://learn.microsoft.com/en-us/dotnet/api/system.text.json.jsonserializer.serialize?view=net-8.0
 
         string serializedEntries = JsonSerializer.Serialize(entries, new JsonSerializerOptions { IncludeFields = true });
-        Console.WriteLine(entries[0]._entryText);
-        Console.WriteLine(serializedEntries);
+
         File.WriteAllText(fileName, serializedEntries);
     }
     public void LoadFromFIle(string fileName)
