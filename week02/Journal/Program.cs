@@ -1,6 +1,8 @@
 using System;
-//This does not have copy paste, c# is just very similar to JS
-//https://www.linkedin.com/in/luizcredidio/
+//I see now that I didn't add the comment explaining how i exceeded the requirements
+//I did that by saving the entries in JSON format
+//So when you save the file you shoudl save it as json, filename.json, and load as json as well
+
 class Program
 {
     static void Main(string[] args)
