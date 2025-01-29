@@ -20,7 +20,7 @@ class Fraction
         _bottom = bottom;
     }
 
-    public string GetFracntionString()
+    public string GetFractionString()
     {
         return $"{_top}/{_bottom}";
     }
