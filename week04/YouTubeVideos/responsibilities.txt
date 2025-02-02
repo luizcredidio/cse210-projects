@@ -1,0 +1,26 @@
+Video Class:
+
+Stores video data (title, author, length)
+Manages comments list
+Constructor: (string title, string author, int length)
+
+Methods:
+
+AddComment() | Creates/adds new comment
+GetTitle() | Returns title
+GetAuthor() | Returns author
+GetDuration() | Returns length
+GetCommentsCount() | Returns comment count
+ShowComments() | Displays all comments
+
+Comment Class:
+
+Stores comment info (author, text)
+Constructor: (string authorName, string text)
+
+Methods:
+
+DisplayComment() | Shows formatted comment
+
+No additional member variables are needed, we only use the existing member variables of each class. 
+If I understood the assignment correctly we were supposed to list extra attributes from inside the classes right?

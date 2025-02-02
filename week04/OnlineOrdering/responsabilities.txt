@@ -1,0 +1,47 @@
+Order Class:
+
+Manages product list and customer for an order
+Calculates total cost with shipping
+Handles label displays
+Constructor: N/A
+
+Methods:
+
+AddProduct(Product) | Adds product to order list
+SetCustomer(Customer) | Sets order's customer
+GetTotalCost() | Calculates total with shipping
+DisplayPackagingLabel() | Shows all products' labels
+DisplayShippingLabel() | Shows customer shipping info
+
+Product Class:
+
+Stores product details (name, ID, price, quantity)
+Calculates product cost
+Constructor: (string name, int productID, double price, int quantity)
+
+Methods:
+
+DisplayPackagingLabel() | Shows name and ID
+GetTotalCost() | Returns price × quantity
+
+Address Class:
+
+Stores address components
+Validates US addresses
+Constructor: (string street, city, stateOrProvince, country)
+
+Methods:
+
+IsAddressInTheUSA() | Checks if US address
+GetAddress() | Returns formatted address string
+
+Customer Class:
+
+Links customer name with address
+Handles shipping info
+Constructor: (string name, Address address)
+
+Methods:
+
+IsCustomerInTheUSA() | Checks customer's location
+DisplayShippingLabel() | Shows shipping details
